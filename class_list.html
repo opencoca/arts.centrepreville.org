@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+p{
+  margin:1em
+}
+
+.container {
+  padding: 5em;
+}
+a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: tomato;
+}
+#menuToggle {
+  display: block;
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 1;
+  user-select: none;
+}
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+/*
+ * hamburger
+ */
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu {
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* stop flickering of text in safari */
+}
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
+}
+/*
+ * And let's slide it in from the left
+ */
+
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+    </style>
+    <title>Latitude</title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but LT2D doesn't work properly without JavaScript
+        enabled. Please enable it to continue.</strong
+      >
+    </noscript>
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title></title>
+    </head>
+    <body>
+      <div>
+        <p>
+          Bienvenue sur Préville en ligne !
+          <br>
+          Notre plate-forme fonctionne mieux si vous utilisez Chrome comme navigateur.
+          <br>
+          Rafraîchir votre page peut résoudre de nombreux problèmes ! Appuyez sur Shift-Command-R sur un Mac iOS et Shift-Ctrl-R sur Windows ! 
+        </p>
+        <p>
+          Welcome to Préville Online!
+          <br>
+          Our platform works best if you use Chrome as your browser.
+          <br>
+          Refreshing your page can solve many issues! Press Shift-Command-R on a Mac iOS and Shift-Ctrl-R on Windows!
+        </p>
+      </div>
+      <ul id="menu">
+        <li title="Dance / Triple Threat">
+          <a class="" href="/#/meet/Preville2020-Dance" target="_top">Dance / Triple Threat</a>
+        </li>
+        <li title="Piano - Phillip Cho">
+          <a class="" href="/#/meet/Preville2020-Piano-1" target="_top">Piano - Phillip Cho</a>
+        </li>
+        <li title="Piano - Tanya De Villiers">
+          <a class="" href="/#/meet/Preville2020-Piano-2" target="_top">Piano - Tanya De Villiers</a>
+        </li>
+        <li title="Piano - Viktor Lazarov">
+          <a class="" href="/#/meet/Preville2020-Piano-5" target="_top">Piano - Viktor Lazarov</a>
+        </li>
+        <li title="Piano - Rose Nemeth">
+          <a class="" href="/#/meet/Preville2020-Piano-3" target="_top">Piano - Rose Nemeth</a>
+        </li>
+        <li title="Piano - Suzanne Ozorak">
+          <a class="" href="/#/meet/Preville2020-Piano-4" target="_top">Piano - Suzanne Ozorak</a>
+        </li>
+        <li title="Piano - Aset Sabdullaeva">
+          <a class="" href="/#/meet/Preville2020-Piano-5" target="_top">Piano - Aset Sabdullaeva</a>
+        </li>
+        <li title="Violin - Anne Saint-Cyr">
+          <a class="" href="/#/meet/Preville2020-Violin-1" target="_top">Violin - Anne Saint-Cyr</a>
+        </li>
+        <li title="Violin - Anastasia Virlan">
+          <a class="" href="/#/meet/Preville2020-Violin-2" target="_top">Violin - Anastasia Virlan</a>
+        </li>
+        <li title="Violon / Violin - Olga Semenova">
+          <a class="" href="/#/meet/Preville2020-Violin-3" target="_top">Violon / Violin - Olga Semenova</a>
+        </li>
+        <li title="Violon / Violin - Heather Schnarr">
+          <a class="" href="/#/meet/Preville2020-Violin-4" target="_top">Violon / Violin - Heather Schnarr</a>
+        </li>
+        <li title="Suzuki Violin - Ophélie Jobin">
+          <a class="" href="/#/meet/Preville2020-Suzuki-1" target="_top">Suzuki Violin - Ophélie Jobin</a>
+        </li>
+        <li title="Suzuki Violin - Alexandre Desjeunes">
+          <a class="" href="/#/meet/Preville2020-Suzuki-2" target="_top">Suzuki Violin - Alexandre Desjeunes</a>
+        </li>
+        <li title="Flute - Danielle Baro">
+          <a class="" href="/#/meet/Preville2020-Flute" target="_top">Flute - Danielle Baro</a>
+        </li>
+        <li title="Guitar &amp; Ukelele - Robert Rioux Calogero">
+          <a class="" href="/#/meet/Preville2020-Guitar-01" target="_top">Guitar &amp; Ukelele - Robert Rioux Calogero</a>
+        </li>
+        <li title="Guitare &amp; Ukelélé / Guitar &amp; Ukelele - Pierre Clément">
+          <a class="" href="/#/meet/Preville2020-Guitar-02" target="_top">Guitare &amp; Ukelélé / Guitar &amp; Ukelele - Pierre
+            Clément</a>
+        </li>
+        <li title="Classe de rechange / Spare classroom">
+          <a class="" href="/#/meet/Preville2020-Spare" target="_top">Classe de rechange / Spare classroom</a>
+        </li>
+        <li title="Drums - Pierre Goguen">
+          <a class="" href="/#/meet/Preville2020-Drums" target="_top">Drums - Pierre Goguen</a>
+        </li>
+        <li title="Orchestre à cordes / String Orchestra - Olga Semenova">
+          <a class="" href="/#/meet/Preville2020-Orchestra">Orchestre à cordes / String Orchestra - Olga Semenova</a>
+        </li>
+        <li title="River Music - Alison Notkin">
+          <a class="" href="/#/meet/Preville2020-River" target="_top">River Music - Alison Notkin (video)</a>
+        </li>
+        <li title="Theatre - Camille Horrocks-Denis">
+          <a class="" href="/#/meet/Preville2020-Theatre" target="_top">Theatre - Camille Horrocks-Denis</a>
+        </li>
+        <li title="Art - Sarah Fefer ">
+          <a class="" href="/#/meet/Preville2020-Art" target="_top">Art - Sarah Fefer</a>
+        </li>
+        <li title="Sewing - Sandra Poirier">
+          <a class="" href="/#/meet/Sandra-Sewing-0314" target="_top">Sewing - Sandra Poirier</a>
+        </li>
+        <li title="Robotics - Taline Gotcherian &amp; Lindsey Renault">
+          <a class="" href="/#/meet/Preville2020-robotinacan" target="_top">Robotics - Taline Gotcherian &amp; Lindsey
+            Renault</a>
+        </li>
+        <li title="Yoga - Zoubida Maghrabi">
+          <a class="" href="/#/meet/Preville2020-Yoga" target="_top">Yoga - Zoubida Maghrabi</a>
+        </li>
+        <li title="English / French Language Lab - Frédérique LeBel">
+          <a class="" href="/#/meet/Preville2020-Language" target="_top">English / French Language Lab - Frédérique LeBel</a>
+        </li>
+        <li title="Voix/Voice - Marie-Eve Chaput">
+          <a class="" href="/#/meet/Preville2020-Voice-01" target="_top">Voix/Voice - Marie-Eve Chaput</a>
+        </li>
+        <li title="Voix/Voice - Colin Enright">
+          <a class="" href="/#/meet/Preville2020-Voice-02" target="_top">Voix/Voice - Colin Enright</a>
+        </li>
+        <li title="Tech Support - Support technique">
+          <a class="" href="/#/meet/Preville2020-TechSupport" target="_top">Tech Support - Support technique</a>
+        </li>
+        <li title="Salle de jeux - Games Room">
+          <a class="" href="/#/meet/Preville2020-Chess" target="_top">Salle de jeux - Games Room</a>
+        </li>
+        <li title="Library - Bibliothèque">
+          <a class="" href="/#/meet/Preville2020-Biblo" target="_top">Library - Bibliothèque</a>
+        </li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </body>
+      
+      </html>
+      
+      </html>
