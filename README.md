@@ -24,3 +24,6 @@ staticrypt ./index.html \
   -f  ../staticrypt-gh-pages/cli/password_template.html \
   -o ./index.html
 
+# License
+#### Copyright 2019–2021 12787326 Canada Inc.
+#### Licensed under the AGPLv3: https://opensource.org/licenses/agpl-3.0
