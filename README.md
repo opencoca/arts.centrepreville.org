@@ -8,7 +8,7 @@
 #### This readme is the setup script
 
 #### Requires https://github.com/robinmoisson/staticrypt
-
+#### `npm install -g staticrypt`
 ####
 
 #### This readme will run the following
