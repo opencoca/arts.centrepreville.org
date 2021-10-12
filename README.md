@@ -5,7 +5,12 @@
 
 # Temp implementation of LT2D
 
-#### This readme is the setup script
+#### This readme is the setup script ;)
+#### ![Website](https://img.shields.io/website?label=Pr%C3%A9ville&up_message=online&url=https%3A%2F%2Farts.centrepreville.org%2F) https://arts.centrepreville.org 
+#### [![Netlify Status](https://api.netlify.com/api/v1/badges/e75ec369-ba7d-4e12-a04a-8e370e3f91c0/deploy-status)](https://app.netlify.com/sites/sharp-wright-a04f34/deploys) https://netlify.centrepreville.org/
+
+
+
 
 #### Requires https://github.com/robinmoisson/staticrypt
 #### `npm install -g staticrypt`
