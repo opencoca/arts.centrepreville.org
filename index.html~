@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"><link rel="icon" href="/favicon.ico"><title>Latitude</title><link href="/css/chunk-77acee0c.7e2c244b.css" rel="prefetch"><link href="/css/chunk-bc9b67bc.23319680.css" rel="prefetch"><link href="/css/page-meet.70e76dca.css" rel="prefetch"><link href="/js/chunk-77acee0c.932813a8.js" rel="prefetch"><link href="/js/chunk-bc9b67bc.3f6fa2d6.js" rel="prefetch"><link href="/js/page-meet.90fff215.js" rel="prefetch"><link href="/css/app.c5a10472.css" rel="preload" as="style"><link href="/js/app.96479955.js" rel="preload" as="script"><link href="/js/chunk-vendors.9d277ef6.js" rel="preload" as="script"><link href="/css/app.c5a10472.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but LT2D doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.9d277ef6.js"></script><script src="/js/app.96479955.js"></script></body><script>var faq = false;
+	function breakout(t, link){
+			console.log("Clicked!")
+			var coll = document.getElementsByClassName("dot");
+			console.log(coll);
+			Array.from(coll).forEach(e => e.classList.remove("active"));
+			t.classList.add("active");
+			return false;
+		}
+		var count = 1;
+
+		function openWindowSide() {
+			var j;
+			var a;
+			try {
+				j = document.getElementById("jitsi");
+				a = document.getElementById("apps");
+				if (j === null || a === null){
+					throw "j or a == Null"
+				}
+			} catch (error) {
+				j = document.getElementById("list_jitsi");
+				a = document.getElementById("list_snap");
+			}
+			
+			var i = document.getElementById("app_opener");
+			[count, i.src] = cycle();
+			if (count % 3 == 0) {
+				j.className = 'Open';
+				a.className = 'Close';
+			} else if (count % 3 == 1) {
+				j.className = 'Half';
+				a.className = 'Half';
+			} else if (count % 3 == 2) {
+				j.className = 'Close';
+				a.className = 'Open';
+			}
+			//window.dispatchEvent(new Event("resize"));
+		}
+		function cycle(){
+			const Radios = document.getElementsByName("app_state");
+			for(i = 0; i < Radios.length; i++){
+				if (Radios[i].checked) {
+					var out = (i+1)%Radios.length;
+					Radios[out].checked = true;
+					return [out, Radios[out].value];
+				}
+			}
+		}
+		function faq(){
+			var j;
+			var a;
+			try {
+				j = document.getElementById("jitsi");
+				a = document.getElementById("apps");
+				if (j === null || a === null){
+					throw "j or a == Null"
+				}
+			} catch (error) {
+				j = document.getElementById("list_jitsi");
+				a = document.getElementById("list_snap");
+			}
+			var f = document.getElementById('faq');
+			j.className = 'Close';
+			a.className = 'Close';
+			f.className = 'Half';
+			f = true;
+		}
+
+	openWindowSide();</script></html>

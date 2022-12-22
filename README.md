@@ -13,7 +13,7 @@
 
 #### Requires https://github.com/robinmoisson/staticrypt so let's install that
      
-     npm install -g staticrypt
+     npm install staticrypt
 
 #### This readme will run the following
 
@@ -23,10 +23,10 @@
 
 
     staticrypt ./index.html \
-       preville2122 \
+       ArtOnline23 \
        -t "Preville Online" \
        -i "Veuillez entrer le mot de passe pour de cette session // Please enter the password for this session" \
-       -f  ../staticrypt-gh-pages/cli/password_template.html \
+       -f ./password_template.html \
        -o ./index.html
 
 # License
