@@ -2,6 +2,7 @@
 
 #!/bin/bash
 
+# This README is a script. It will setup and encrypt the index.html file
 
 # Temp implementation of LT2D
 
@@ -10,11 +11,9 @@
 #### [![Netlify Status](https://api.netlify.com/api/v1/badges/e75ec369-ba7d-4e12-a04a-8e370e3f91c0/deploy-status)](https://app.netlify.com/sites/sharp-wright-a04f34/deploys) https://netlify.centrepreville.org/
 
 
-
-
-#### Requires https://github.com/robinmoisson/staticrypt
-#### `npm install -g staticrypt`
-####
+#### Requires https://github.com/robinmoisson/staticrypt so let's install that
+     
+     npm install -g staticrypt
 
 #### This readme will run the following
 
@@ -23,12 +22,12 @@
 
 
 
-staticrypt ./index.html \
-   preville2122 \
-  -t "Preville Online" \
-  -i "Veuillez entrer le mot de passe pour de cette session // Please enter the password for this session" \
-  -f  ../staticrypt-gh-pages/cli/password_template.html \
-  -o ./index.html
+    staticrypt ./index.html \
+       preville2122 \
+       -t "Preville Online" \
+       -i "Veuillez entrer le mot de passe pour de cette session // Please enter the password for this session" \
+       -f  ../staticrypt-gh-pages/cli/password_template.html \
+       -o ./index.html
 
 # License
 #### Copyright 2019–2021 12787326 Canada Inc.
