@@ -18,7 +18,8 @@
 #### This readme will run the following
 
 #### thereby encryting the latest build of LT2D 
-#### so long as this is run from inside LT2D's dist
+#### so long as this is run from inside a https://github.com/opencoca/lt2d_school repository
+##### Please note when updaing password it's a good idea to also commit the new version's submodule https://github.com/opencoca/lt2d_school
 
 
 
