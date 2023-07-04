@@ -17,7 +17,7 @@
 
 #### This readme will run the following
 
-#### thereby encryting the latest build off LT2D 
+#### thereby encryting the latest build of LT2D 
 #### so long as this is run from inside LT2D's dist
 
 
