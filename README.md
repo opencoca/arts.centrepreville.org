@@ -4,7 +4,7 @@
 
 # This README is a script. It will setup and encrypt the index.html file
 
-# Temp implementation of LT2D
+# implementation of LT2D
 
 #### This readme is the setup script ;)
 #### ![Website](https://img.shields.io/website?label=Pr%C3%A9ville&up_message=online&url=https%3A%2F%2Farts.centrepreville.org%2F) https://arts.centrepreville.org 
